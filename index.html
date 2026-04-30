@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edgar Fan — 寫下值得慢想的事</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Noto+Serif+TC:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="js-enabled">
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">Edgar Fan</a>
+      
+      <button class="nav__toggle" id="navToggle" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <span class="hero__dot"></span> 歡迎來到我的角落
+          </p>
+          <h1 class="hero__name">Edgar Fan</h1>
+          <p class="hero__tagline">寫下生活裡那些值得慢想的事</p>
+          <p class="hero__sub">關於成長、關於選擇、關於那些沒有標準答案的問題。</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Work</a>
+            <a href="#contact" class="btn btn--outline">Contact Me</a>
+          </div>
+          <div class="hero__meta">
+            <span class="tag">歷史學</span>
+            <span class="tag">資料科學</span>
+            <span class="tag">鐵道模擬</span>
+          </div>
+        </div>
+        <div class="hero__deco" aria-hidden="true">
+          <div class="hero__deco-box">
+            <span class="mono">Latest</span>
+            <p>Current Focus</p>
+            <h3>數位人文與空間史料分析</h3>
+            <a href="#courses" class="deco-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about is-visible" id="about">
+      <div class="container">
+        <div class="section-label">
+          <span class="mono">01 /</span> About
+        </div>
+        <div class="about__grid">
+          <div class="about__text">
+            <h2 class="about__heading">嗨，我是 Edgar。</h2>
+            <p class="about__body">
+              目前就讀於國立臺北大學歷史學系。我熱衷於將歷史研究的嚴謹性與數位工具的便利性結合，探索過去與現代之間的交集。
+            </p>
+            <p class="about__body">
+              除了史料爬梳，我也投入 Python 與 R 語言的學習，嘗試在資料科學與遊戲模組開發中尋找新的敘事方式。
+            </p>
+          </div>
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-card__number mono">4</span>
+              <span class="stat-card__label">核心領域</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number mono">2</span>
+              <span class="stat-card__label">語言能力</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="courses">
+      <div class="container">
+        <div class="section-label"><span class="mono">02 /</span> Courses</div>
+        <h2 class="section-heading">學術修業</h2>
+        <div class="cards-grid" id="courses-container"></div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="projects">
+      <div class="container">
+        <div class="section-label"><span class="mono">03 /</span> Projects</div>
+        <h2 class="section-heading">專案實作</h2>
+        <div class="cards-grid" id="projects-container"></div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="skills">
+      <div class="container">
+        <div class="section-label"><span class="mono">04 /</span> Skills</div>
+        <h2 class="section-heading">核心技能</h2>
+        <div class="skills-grid" id="skills-container"></div>
+      </div>
+    </section>
+
+    <section class="contact is-visible" id="contact">
+      <div class="container">
+        <div class="section-label">
+          <span class="mono">05 /</span> Contact
+        </div>
+        <div class="contact__inner">
+          <h2 class="contact__heading">來聊聊吧。</h2>
+          <p class="contact__sub">
+            無論是關於數位人文的討論，或是單純想聊聊鐵道模擬，都歡迎聯絡我。
+          </p>
+          <div class="contact__links">
+            <a href="mailto:edgar@example.com" class="contact-item">
+              <span class="contact-item__icon" aria-hidden="true">✉</span>
+              <span class="contact-item__label">Email</span>
+              <span class="contact-item__value">edgar@example.com</span>
+            </a>
+            <a href="#" class="contact-item">
+              <span class="contact-item__icon" aria-hidden="true">⌥</span>
+              <span class="contact-item__label">GitHub</span>
+              <span class="contact-item__value">@edgar-fan-ntpu</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer__copy">
+        © 2026 Edgar Fan &nbsp;·&nbsp;
+        <span class="mono">用文字與資料慢想</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
