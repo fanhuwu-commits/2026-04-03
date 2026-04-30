@@ -9,10 +9,9 @@ const courses = [
   { courseName: "基礎日語與文化", category: "Language & Culture", skillsLearned: ["初級日文", "情境溝通", "日本文化"], description: "著重於旅遊、購物與交通等實用情境的日語溝通，並培養基礎的文化涵養。" }
 ];
 
-// 專案圖片已換成穩定的 Picsum 測試圖片
 const projects = [
-  { projectName: "Python 隨機生成腳本開發", status: "Completed", detailDesc: "使用 Python 撰寫基於 d100 系統的隨機化腳本，能自動產出包含數值與背景的詳盡角色設定檔（如 Fate 系列 Servant）。", techStack: ["Python", "腳本開發", "自動化"], imageUrl: "https://picsum.photos/seed/project1/600/400", link: "https://github.com/edgar-fan-ntpu/python-scripts" },
-  { projectName: "交通運輸模擬與模組開發", status: "Completed", detailDesc: "在《Transport Fever 2》中結合現實時刻表與廣播系統規劃交通網，並在 Minecraft Create 中進行航空物理模擬。", techStack: ["遊戲模組開發", "交通路網規劃", "模擬實作"], imageUrl: "https://picsum.photos/seed/project2/600/400", link: "https://github.com/edgar-fan-ntpu/transport-mods" }
+  { projectName: "Python 隨機生成腳本開發", status: "Completed", detailDesc: "使用 Python 撰寫基於 d100 系統的隨機化腳本，能自動產出包含數值與背景的詳盡角色設定檔（如 Fate 系列 Servant）。", techStack: ["Python", "腳本開發", "自動化"], imageUrl: "images/python-script.jpg", link: "https://github.com/fanhuwu-commits" },
+  { projectName: "交通運輸模擬與模組開發", status: "Completed", detailDesc: "在《Transport Fever 2》中結合現實時刻表與廣播系統規劃交通網，並在 Minecraft Create 中進行航空物理模擬。", techStack: ["遊戲模組開發", "交通路網規劃", "模擬實作"], imageUrl: "images/transport-sim.jpg", link: "https://github.com/fanhuwu-commits" }
 ];
 
 const skills = {
@@ -111,7 +110,6 @@ function initThemeToggle() {
   const iconSpan = toggleBtn.querySelector('.theme-toggle__icon');
   const htmlEl = document.documentElement;
   
-  // 更新圖示的函式：深色模式顯示太陽，淺色模式顯示月亮
   const updateIcon = (theme) => {
     iconSpan.textContent = theme === 'dark' ? '☀️' : '🌙';
   };
@@ -124,7 +122,6 @@ function initThemeToggle() {
     htmlEl.setAttribute('data-theme', 'dark');
     updateIcon('dark');
   } else {
-    // 預設為淺色
     updateIcon('light');
   }
 
@@ -133,7 +130,7 @@ function initThemeToggle() {
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     htmlEl.setAttribute('data-theme', newTheme);
     localStorage.setItem('edgar-theme', newTheme); 
-    updateIcon(newTheme); // 切換時同步更新圖示
+    updateIcon(newTheme);
   });
 }
 
